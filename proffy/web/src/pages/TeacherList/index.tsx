@@ -43,6 +43,10 @@ function TeacherList() {
 
             <main>
                 <TeacherItem name="Joacy Mesquita" />
+                <TeacherItem name="Joacy Mesquita" />
+                <TeacherItem name="Joacy Mesquita" />
+                <TeacherItem name="Joacy Mesquita" />
+                <TeacherItem name="Joacy Mesquita" />
             </main>
         </div>
     );
