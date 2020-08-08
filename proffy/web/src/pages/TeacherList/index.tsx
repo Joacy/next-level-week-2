@@ -3,8 +3,6 @@ import React from 'react';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem from '../../components/TeacherItem';
 
-import whatsapp from '../../assets/images/icons/whatsapp.svg';
-
 import './styles.css';
 
 function TeacherList() {
