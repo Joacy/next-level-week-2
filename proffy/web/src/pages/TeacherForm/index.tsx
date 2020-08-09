@@ -1,6 +1,9 @@
 import React from 'react';
 
 import PageHeader from '../../components/PageHeader';
+import Input from '../../components/Input';
+
+import warning from '../../assets/images/icons/warning.svg';
 
 import './styles.css';
 
@@ -13,15 +16,33 @@ function TeacherForm() {
             />
 
             <main>
-                <form action="">
+                <form onSubmit={() => { }}>
                     <fieldset>
                         <legend>Seus dados</legend>
 
-                        <div className="input-block">
-                            <label htmlFor="name">Nome completo</label>
-                            <input type="text" id="name" />
-                        </div>
+                        <Input label="Nome Completo" name="name" />
+                        <Input label="Avatar" name="avatar" />
+                        <Input label="Whatsapp" name="whatsapp" />
                     </fieldset>
+
+                    <fieldset>
+                        <legend>Sobre a aula</legend>
+
+                        <Input label="Matéria" name="subject" placeholder="Selecione qual você quer ensinar" />
+                        <Input label="Custo da sua aula por hora " name="cost" />
+                    </fieldset>
+
+                    <footer>
+                        <p>
+                            <img src={warning} alt="Aviso importante" />
+                            Importante! <br />
+                            Preencha todos os dados
+                        </p>
+
+                        <button type="submit">
+                            Salvar cadastro
+                        </button>
+                    </footer>
                 </form>
             </main>
         </div>
